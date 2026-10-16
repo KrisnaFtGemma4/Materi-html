@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <header>
+        <h1>Header Website</h1>
+    </header>
+    <div class="container">
+        <aside>
+            <h3>Sidebar</h3>
+            <p>Menu/Link Navigasi</p>
+        </aside>
+        <main>
+            <h2>Konten Utama</h2>
+            <p>Ini adalah area tempat konten artikel atau informasi utama di tampilkan.</p>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2026 Website Saya. All Rights Reserved.</p>
+    </footer>
+</body>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: system-ui, -apple-system, sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background: #333;
+    }
+    header{
+        background-color: #1e283b;
+        color: white;
+        padding: 1.5rem;
+        text-align: center;
+
+    }
+    .container{
+        display: flex;
+        flex: 1;
+    }
+    aside{
+        width: 200px;
+        background-color: #f1f5f9;
+        padding: 1rem;
+        border-right: 1px solid #2e8ef0;
+    }
+    main{
+        flex: 1;
+        padding: 1.5rem;
+        background-color: #ffffff;
+    }
+    footer{
+        background-color: #0f172a;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+    @media(max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+        aside{
+            width: 100px;
+            border-right: none;
+            border-bottom: 1px solid #e2e8f0;
+        }
+    }
+
+</style>
+</html>
