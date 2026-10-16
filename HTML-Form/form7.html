@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form pendaftaran mahasiswa vincent</title>
+</head>
+<body>
+    <div class="div">
+        <h2>Form Pendaftaran Mahasiswa</h2>
+        <form>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="jurusan">Jurusan:</label>
+            <select id="jurusan" name="jurusan">
+                <option value="informatika">Informatika</option>
+                <option value="sistem-informasi">Sistem Informasi</option>
+                <option value="teknik-komputer">Teknik Komputer</option>
+            </select><br><br>
+
+            <input type="submit" value="Daftar">
+        </form>
+    </div>
+</body>
+<style>
+.div {
+    width: 100%;
+    min-height: 600px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow:0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    text-align: left;
+    box-sizing: border-box;
+}
+body{
+    background: url(background.png) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    color: white;
+}
+p{
+    color: white;
+}
+label{
+    color: white;
+}
+
+</style>
+</html>
